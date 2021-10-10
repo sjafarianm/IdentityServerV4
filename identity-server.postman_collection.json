@@ -1,0 +1,236 @@
+{
+	"info": {
+		"_postman_id": "09c3a66e-5b82-42d2-b1cd-cef7f54c267b",
+		"name": "identity-server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:24979/connect/token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "3X=nN334v?Sgu$S",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "1554db43-3015-47a8-a748-55bd76b6af48",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "SendSms SendEmail",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "sjafarianm",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "testpass123#",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:24979/connect/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "24979",
+					"path": [
+						"connect",
+						"token"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:64016/api/message/test",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc4MDI4ODRBQzYzQjE0RTEwQTJEOTBDQzEwMTJEQUMyIiwidHlwIjoiYXQrand0In0.eyJuYmYiOjE1OTYzNzc0MDUsImV4cCI6MTU5NjM4MTAwNSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDoyNDk3OSIsImF1ZCI6Im1haWxnYXRld2F5YXBpIiwiY2xpZW50X2lkIjoiM1g9bk4zMzR2P1NndSRTIiwic3ViIjoiMWRlODY3NDYtYjllNy00ODhlLTliNzgtNzc5ZWIyMzJmMjM5IiwiYXV0aF90aW1lIjoxNTk2Mzc3NDAyLCJpZHAiOiJsb2NhbCIsImp0aSI6IkI4NDAzM0I4RDYzRjlGQjRFMjc4OUNEQkVDQjEzNDBCIiwiaWF0IjoxNTk2Mzc3NDA1LCJzY29wZSI6WyJTZW5kRW1haWwiLCJTZW5kU21zIl0sImFtciI6WyJjdXN0b20iXX0.NssFN6bpC5eslP710EaJ8wWrUz4ovyuhNGj3ZaOJPcTGcTmvh0f7nBK4sXjqhKD-ej5Z_HwR4F0dpnDbz2fKvyNSbd-WUuI0C9-p4uRUdh6nfvf5oGgX1hBGHtc_37wwoQWTZA7WNGjRKs6xvChWJmejnD8nYPzndVwCTjQ8BXR2xKzBK_INwzyJ4xuA86sBTeH2Q-FTuA2LWmU1CFyXUymaU1Yxdsulp2RzKQz4Ht6C3ldrso-YlrB3POdtz0dSivXRkUkLbJoVZahMpXtpu8V2Ax6TovjH8LLXzDtJvNzZbLwrzaDDUNh6HRJ97CxCMVhPU9WdhM9c1c3OrlV0lw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:64016/api/message/test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "64016",
+					"path": [
+						"api",
+						"message",
+						"test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:24979/connect/token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "S&^J=asbd73",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "2B00E525-72D9-4310-B7FD-D828AD6F30AE",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "SendSms SendEmail",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "test",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "testpass",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:24979/connect/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "24979",
+					"path": [
+						"connect",
+						"token"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:24979/api/user/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"UserId\":\"1DE86746-B9E7-488E-9B78-779EB232F239\",\r\n\"Username\":\"sjafarianm\",\r\n\"FirstName\":\"Saeed\",\r\n\"LastName\":\"Jafarian\",\r\n\"Password\":\"testpass123#\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:24979/api/user/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "24979",
+					"path": [
+						"api",
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
